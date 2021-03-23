@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.03
+// Version: 1.04
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 //
 // etc.
 //
-// ..or you could replace getEl() to $() (like jQuery) or any other charachter for even easier access.
+// ..or you could rename getEl() to $() (like jQuery) or any other charachter for even easier access.
 // Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
 // charachter as a function or element selection. :)
 //----------------------------------------------------------------------------------------------------
