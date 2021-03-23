@@ -12,7 +12,7 @@
 // var el = getEl('div p.myClass');
 // var el = getEl('div p span');
 //
-// var el = getEl('h3, div, span');  // <-- multiple selectors, separate each selector with a comma.
+// var el = getEl('h3, div, span');  // <-- multiple selectors, separate each selector with a comma
 //
 // etc.
 //
