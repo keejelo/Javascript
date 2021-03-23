@@ -14,7 +14,8 @@
 // etc.
 //
 // ..or you could replace getEl() to $() (like jQuery) or any other charachter for even easier access.
-// just be sure that if using $() then you cannot use jQuery $()      
+// Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
+// charachter as a function or element selection
 // :)
 //----------------------------------------------------------------------------------------------------
 
