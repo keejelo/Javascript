@@ -1,14 +1,14 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.06
+// Version: 1.07
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
 //
-// Syntax: getEl(CSS selectors);
+// Syntax: getEl(selectors, parentNode);  // <-- if parentNode not used then default is: document
 //
 //
-// Examples on how to use:
+// Simple examples on how to use:
 //
 // var el = getEl('#myDiv');
 // var el = getEl('.myClass');
@@ -19,12 +19,13 @@
 //
 // etc.
 //
-// ..or you could rename getEl() to $() (like jQuery), or maybe $$() for even easier access.
+// ..or you could rename getEl() to $() (like jQuery) or any other charachter for even easier access.
 // Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
 // charachter as a function or element selection. :)
 //----------------------------------------------------------------------------------------------------
-var getEl = function(s)
+var getEl = function(s,o)
 {
+    var doc = document;
     // Trim leading and trailing spaces from selector string before we use it
     s = s.replace(/^\s+|\s+$/g, '');
 
@@ -39,23 +40,23 @@ var getEl = function(s)
             s = s.replace(/^\s+|\s+$/g, '');  // Trim string of leading and trailing spaces (again)
 
             // Check if element exist in DOM
-            if(document.querySelector(id).querySelectorAll(s).length > 0)
+            if((o||doc).querySelector(id).querySelectorAll(s).length > 0)
             {
-                return document.querySelector(id).querySelectorAll(s);
+                return (o||doc).querySelector(id).querySelectorAll(s);
             }
         }
         else
         {
             // Since an id should be unique, there should be only one element with that id
-            return document.querySelector(s);
+            return (o||doc).querySelector(s);
         }
     }
     else
     {
         // Since string did NOT start with # (hash) id, we search for native DOM elements
-        if(document.querySelectorAll(s).length > 0)
+        if((o||doc).querySelectorAll(s).length > 0)
         {
-            return document.querySelectorAll(s);
+            return (o||doc).querySelectorAll(s);
         }
     };
 
