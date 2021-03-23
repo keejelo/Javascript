@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.04
+// Version: 1.05
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
@@ -11,6 +11,8 @@
 // var el = getEl('.myClass');
 // var el = getEl('div p.myClass');
 // var el = getEl('div p span');
+//
+// var el = getEl('h3, div, span');  // <-- multiple selectors, separate each selector with a comma.
 //
 // etc.
 //
