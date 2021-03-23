@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for .querySelector() and .querySelectorAll()
-// Version: 1.1
+// Version: 1.01
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
@@ -15,8 +15,7 @@
 //
 // ..or you could replace getEl() to $() (like jQuery) or any other charachter for even easier access.
 // Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
-// charachter as a function or element selection
-// :)
+// charachter as a function or element selection. :)
 //----------------------------------------------------------------------------------------------------
 
 
@@ -25,12 +24,12 @@
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s)
 {
+    // Trim leading and trailing spaces from string before we use it
+    s = s.replace(/^\s+|\s+$/g, '');
+
     // If string starts with # (hash) id
     if(s.indexOf('#') != -1)
     {        
-        // Trim leading and trailing spaces from string before we use it
-        s = s.replace(/^\s+|\s+$/g, '');
-
         // If string contains a space then we know there are more elements
         if(s.indexOf(' ') != -1)
         {                                     // The below assumes that string starts with hash '#'
