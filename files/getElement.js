@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.02
+// Version: 1.03
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
@@ -45,15 +45,13 @@ var getEl = function(s)
         }
         else
         {
-            // Since an id should be unique, there should be only one element with that id.
-            // So get the only element containing the specified id.
+            // Since an id should be unique, there should be only one element with that id
             return document.querySelector(s);
         }
     }
     else
     {
-        // Since string do NOT start with # (hash) id, then we search for native DOM elements
-        // Check if element exist in DOM
+        // Since string did NOT start with # (hash) id, we search for native DOM elements
         if(document.querySelectorAll(s).length > 0)
         {   
             return document.querySelectorAll(s);
