@@ -1,9 +1,12 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.05
+// Version: 1.06
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
+//
+// Syntax: getEl(CSS selectors);
+//
 //
 // Examples on how to use:
 //
