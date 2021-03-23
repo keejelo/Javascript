@@ -13,6 +13,9 @@
 //
 // etc.
 //
+// ..or you could replace getEl() to $() (like jQuery) or any other charachter for even easier access.
+// just be sure that if using $() then you cannot use jQuery $()      
+// :)
 //----------------------------------------------------------------------------------------------------
 
 
