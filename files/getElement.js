@@ -5,6 +5,7 @@
 * Year: 2020-2021
 *****************************************************************************************************/
 
+
 //----------------------------------------------------------------------------------------------------
 // ** GetElements
 //----------------------------------------------------------------------------------------------------
@@ -37,6 +38,9 @@ var getEl = function(str)
     }
     else
     {
+        // TODO: if parent is not document, then use element as parent:
+        // return element.querySelectorAll(str);
+        
         // ** Since string do NOT start with # (hash) id, then we search for DOM elements
         if(document.querySelectorAll(str).length > 0)
         {
