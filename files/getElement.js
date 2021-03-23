@@ -37,7 +37,7 @@ var getEl = function(s)
             s = s.replace(id, '');            // Get second half of string by removing '#id'
             s = s.replace(/^\s+|\s+$/g, '');  // Trim string of leading and trailing spaces (again)
             
-            // Check if element exist in DOM, else return: null
+            // Check if element exist in DOM
             if(document.querySelector(id).querySelectorAll(s).length > 0)
             {
                 return document.querySelector(id).querySelectorAll(s);
@@ -53,8 +53,9 @@ var getEl = function(s)
     else
     {
         // Since string do NOT start with # (hash) id, then we search for native DOM elements
+        // Check if element exist in DOM
         if(document.querySelectorAll(s).length > 0)
-        {
+        {   
             return document.querySelectorAll(s);
         }
     };
