@@ -25,9 +25,11 @@
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s,o)
 {
-    var doc = document;
     // Trim leading and trailing spaces from selector string before we use it
     s = s.replace(/^\s+|\s+$/g, '');
+
+    // Reference to document
+    var doc = document;
 
     // If string starts with # (hash) id
     if(s.indexOf('#') != -1)
