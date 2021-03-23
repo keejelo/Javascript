@@ -17,11 +17,6 @@
 // Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
 // charachter as a function or element selection. :)
 //----------------------------------------------------------------------------------------------------
-
-
-//----------------------------------------------------------------------------------------------------
-// GetElement
-//----------------------------------------------------------------------------------------------------
 var getEl = function(s)
 {
     // Trim leading and trailing spaces from selector string before we use it
