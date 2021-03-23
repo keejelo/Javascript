@@ -24,14 +24,14 @@ var getEl = function(s)
 
     // If string starts with # (hash) id
     if(s.indexOf('#') != -1)
-    {        
+    {
         // If selector string contains a space then we know there are more elements
         if(s.indexOf(' ') != -1)
         {                                     // The below assumes that string starts with hash '#'
             var id = s.split(' ')[0];         // Get first part of string before first space ' '
             s = s.replace(id, '');            // Get second half of string by removing '#id'
             s = s.replace(/^\s+|\s+$/g, '');  // Trim string of leading and trailing spaces (again)
-            
+
             // Check if element exist in DOM
             if(document.querySelector(id).querySelectorAll(s).length > 0)
             {
@@ -48,11 +48,11 @@ var getEl = function(s)
     {
         // Since string did NOT start with # (hash) id, we search for native DOM elements
         if(document.querySelectorAll(s).length > 0)
-        {   
+        {
             return document.querySelectorAll(s);
         }
     };
-    
+
     // No matching element selection found
     return null;
 };
