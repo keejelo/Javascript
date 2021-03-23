@@ -1,8 +1,8 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.08
+// Version: 1.09
 // Created by: keejelo
-// Year: 2020-2021
+// Year: 2010
 //----------------------------------------------------------------------------------------------------
 //
 // Syntax: getEl(selectors, parentNode);  // <-- if parentNode not used then default is: document
