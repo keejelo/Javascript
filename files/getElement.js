@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for document.querySelector() and document.querySelectorAll()
-// Version: 1.07
+// Version: 1.08
 // Created by: keejelo
 // Year: 2020-2021
 //----------------------------------------------------------------------------------------------------
@@ -28,9 +28,6 @@ var getEl = function(s,o)
     // Trim leading and trailing spaces from selector string before we use it
     s = s.replace(/^\s+|\s+$/g, '');
 
-    // Reference to document
-    var doc = document;
-
     // If string starts with # (hash) id
     if(s.indexOf('#') != -1)
     {
@@ -42,23 +39,23 @@ var getEl = function(s,o)
             s = s.replace(/^\s+|\s+$/g, '');  // Trim string of leading and trailing spaces (again)
 
             // Check if element exist in DOM
-            if((o||doc).querySelector(id).querySelectorAll(s).length > 0)
+            if((o||document).querySelector(id).querySelectorAll(s).length > 0)
             {
-                return (o||doc).querySelector(id).querySelectorAll(s);
+                return (o||document).querySelector(id).querySelectorAll(s);
             }
         }
         else
         {
             // Since an id should be unique, there should be only one element with that id
-            return (o||doc).querySelector(s);
+            return (o||document).querySelector(s);
         }
     }
     else
     {
         // Since string did NOT start with # (hash) id, we search for native DOM elements
-        if((o||doc).querySelectorAll(s).length > 0)
+        if((o||document).querySelectorAll(s).length > 0)
         {
-            return (o||doc).querySelectorAll(s);
+            return (o||document).querySelectorAll(s);
         }
     };
 
