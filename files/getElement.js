@@ -8,6 +8,7 @@
 // Examples on how to use:
 //
 // var el = getEl('#myDiv');
+// var el = getEl('.myClass');
 // var el = getEl('div p.myClass');
 // var el = getEl('div p span');
 //
