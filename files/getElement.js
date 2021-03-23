@@ -19,9 +19,9 @@
 //
 // etc.
 //
-// ..or you could rename getEl() to $() (like jQuery) or any other charachter for even easier access.
+// ..or you could rename getEl() to $() (like jQuery) or any other character for even easier access.
 // Just be sure that if using $() then you cannot use jQuery $() , or any other library that uses that
-// charachter as a function or element selection. :)
+// character as a function or element selection. :)
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s,o)
 {
