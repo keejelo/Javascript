@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------
-// GetElement - combined shorthand for .querySelector() and .querySelectorAll()
+// GetElement - shorthand for .querySelectorAll()
 // Version: 1.0
 // Created by: keejelo
 // Year: 2010
@@ -8,11 +8,7 @@
 //----------------------------------------------------------------------------------------------------
 var getEl = function(selectors, elem)
 {
-    if((elem||document).querySelectorAll(selectors).length === 1)
-    {
-        return (elem||document).querySelector(selectors);
-    }    
-    else if((elem||document).querySelectorAll(selectors).length > 0)
+    if((elem||document).querySelectorAll(selectors).length > 0)
     {
         return (elem||document).querySelectorAll(selectors);
     }
