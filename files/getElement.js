@@ -20,7 +20,7 @@ var getEl = function(selectors, parentElem)
     // ** Clean string before working with it, trim leading and trailing spaces
     selectors = selectors.replace(/^\s+|\s+$/g, '');
 
-    // ** If string starts with # (hash) element id
+    // ** If string contains # (hash) element id
     if(selectors.indexOf('#') != -1)
     {
         // ** If string contains a space or comma
