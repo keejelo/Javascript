@@ -2,7 +2,7 @@
 // GetElement - combined shorthand for .querySelector() and .querySelectorAll()
 // Version: 1.01
 // Created by: keejelo
-// Year: 2010
+// Year: 2021
 //----------------------------------------------------------------------------------------------------
 // Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then defaults to: document
 //
