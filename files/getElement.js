@@ -1,19 +1,44 @@
 //----------------------------------------------------------------------------------------------------
-// GetElement - shorthand for .querySelectorAll()
+// GetElement - combined shorthand for .querySelector() and .querySelectorAll()
 // Version: 1.0
 // Created by: keejelo
 // Year: 2010
 //----------------------------------------------------------------------------------------------------
-// Syntax: getEl(selectors, parent);  // <-- if parent not used then default is: document
+// Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then default to: document
 //----------------------------------------------------------------------------------------------------
-var getEl = function(selectors, elem)
+var getEl = function(selector, parentElem)
 {
-    if((elem||document).querySelectorAll(selectors).length > 0)
-    {
-        return (elem||document).querySelectorAll(selectors);
+    // ** Clean string before working with it, trim leading and trailing spaces
+    selector = selector.replace(/^\s+|\s+$/g, '');
+    
+    // ** If string starts with # (hash) element id
+    if(selector.indexOf('#') != -1)
+    {    
+        // ** If string contains a space or comma
+        if(selector.indexOf(' ') != -1 || selector.indexOf(',') != -1)
+        {
+            // ** Check if element exist before returning it
+            if((parentElem||document).querySelectorAll(selector).length > 0)
+            {
+                return (parentElem||document).querySelectorAll(selector);
+            }
+        }
+        else
+        {
+            // ** Get element with specified id, only
+            return (parentElem||document).querySelector(selector);
+        }
     }
+    else
+    {
+        if((parentElem||document).querySelectorAll(selector).length > 0)
+        {
+            return (parentElem||document).querySelectorAll(selector);
+        }
+    };
+
     return null;
 };
 //----------------------------------------------------------------------------------------------------
-// END: GetElement
+// ** END: GetElement
 //----------------------------------------------------------------------------------------------------
