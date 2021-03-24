@@ -15,4 +15,5 @@ If not used then it defaults to: document
 <br />
 
 ## Return value
-Returns either a <code>NodeList</code> containing all matching element nodes, one single element if using <code>'#id'</code>, or <code>null</code> if no matching elements are found.
+Returns either a <code>NodeList</code> containing all matching element nodes, one single element if using <code>'#id'</code>,<br />
+or <code>null</code> if no matching elements are found.
