@@ -15,35 +15,35 @@
 //----------------------------------------------------------------------------------------------------
 // ** GetElement
 //----------------------------------------------------------------------------------------------------
-var getEl = function(selectors, parentElem)
+var getEl = function(s, p)
 {
     // ** Clean string before working with it, trim leading and trailing spaces
-    selectors = selectors.replace(/^\s+|\s+$/g, '');
+    s = s.replace(/^\s+|\s+$/g, '');
+    
+    var a = (p || document).querySelectorAll(s);
+    var b = (p || document).querySelector(s);
 
     // ** If string contains # (hash) element id
-    if(selectors.indexOf('#') != -1)
+    if(s.indexOf('#') != -1)
     {
         // ** If string contains a space or comma
-        if(selectors.indexOf(' ') != -1 || selectors.indexOf(',') != -1)
+        if(s.indexOf(' ') != -1 || s.indexOf(',') != -1)
         {
-            // ** Check if element exist before returning it
-            if((parentElem||document).querySelectorAll(selectors).length > 0)
+            if(a.length > 0)
             {
-                return (parentElem||document).querySelectorAll(selectors);
-            }
+                return a;
+            }  
         }
         else
         {
-            // ** Get the element with the specified id only (will return null if not found)
-            return (parentElem||document).querySelector(selectors);
+            return b;
         }
     }
     else
     {
-        // ** Check if element exist before returning it
-        if((parentElem||document).querySelectorAll(selectors).length > 0)
+        if(a.length > 0)
         {
-            return (parentElem||document).querySelectorAll(selectors);
+            return a;
         }
     };
     
