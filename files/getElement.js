@@ -8,7 +8,7 @@
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using '#id'
-// or  null  if no matching element was found.
+// or  null  if no matching element is found.
 //----------------------------------------------------------------------------------------------------
 
 
