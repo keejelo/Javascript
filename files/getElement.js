@@ -4,7 +4,7 @@
 // Created by: keejelo
 // Year: 2010
 //----------------------------------------------------------------------------------------------------
-// Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then default to: document
+// Syntax: getEl(selector, parentElem);  // <-- if parentElem not used then default to: document
 //----------------------------------------------------------------------------------------------------
 var getEl = function(selector, parentElem)
 {
