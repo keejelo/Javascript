@@ -9,6 +9,7 @@
 //
 // Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then default to: document
 //
+// Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using '#id'
 // or  null  if no matching element was found.
 //
