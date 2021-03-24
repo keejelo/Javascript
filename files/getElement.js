@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for .querySelector() and .querySelectorAll()
-// Version: 0.5
+// Version: 1.0
 // Created by: keejelo
 // Year: 2010
 //----------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ var getEl = function(selectors, parentElem)
         }
         else
         {
-            // ** Get element with specified id, only
+            // ** Get the element with the specified id only (will return null if not found)
             return (parentElem||document).querySelector(selectors);
         }
     }
