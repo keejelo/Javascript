@@ -8,7 +8,7 @@
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using '#id'
-// or  null  if no matching element is found.
+// or  null  if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s, p)
 {
