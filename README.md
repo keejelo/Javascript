@@ -5,7 +5,7 @@ Javascript getElement wrapper function, combined shorthand for .querySelector() 
 <pre>
 getEl(selectors, parentElem);
 </pre>
-Parameter: <code>parentElem</code> is optional
+Parameter <code>parentElem</code> is optional
 If not used then it defaults to: document
 
 <br />
