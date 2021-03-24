@@ -1,4 +1,4 @@
-# Javascript getElement wrapper function
+# Javascript getElement
 Javascript getElement wrapper function, combined shorthand for <code>querySelector()</code> and <code>querySelectorAll()</code>
 
 <br />
