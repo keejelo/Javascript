@@ -13,10 +13,8 @@
 var getEl = function(s, p)
 {
     s = s.replace(/^\s+|\s+$/g, '');
-    
     var a = (p || document).querySelectorAll(s);
     var b = (p || document).querySelector(s);
-
     if(s.indexOf('#') != -1)
     {
         if(s.indexOf(' ') != -1 || s.indexOf(',') != -1)
@@ -38,7 +36,6 @@ var getEl = function(s, p)
             return a;
         }
     };
-    
     return null;
 };
 //----------------------------------------------------------------------------------------------------
