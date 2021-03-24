@@ -4,37 +4,37 @@
 // Created by: keejelo
 // Year: 2010
 //----------------------------------------------------------------------------------------------------
-// Syntax: getEl(selector, parentElem);  // <-- if parentElem not used then default to: document
+// Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then default to: document
 //----------------------------------------------------------------------------------------------------
-var getEl = function(selector, parentElem)
+var getEl = function(selectors, parentElem)
 {
     // ** Clean string before working with it, trim leading and trailing spaces
-    selector = selector.replace(/^\s+|\s+$/g, '');
+    selectors = selectors.replace(/^\s+|\s+$/g, '');
     
     // ** If string starts with # (hash) element id
-    if(selector.indexOf('#') != -1)
+    if(selectors.indexOf('#') != -1)
     {
         // ** If string contains a space or comma
-        if(selector.indexOf(' ') != -1 || selector.indexOf(',') != -1)
+        if(selectors.indexOf(' ') != -1 || selectors.indexOf(',') != -1)
         {
             // ** Check if element exist before returning it
-            if((parentElem||document).querySelectorAll(selector).length > 0)
+            if((parentElem||document).querySelectorAll(selectors).length > 0)
             {
-                return (parentElem||document).querySelectorAll(selector);
+                return (parentElem||document).querySelectorAll(selectors);
             }
         }
         else
         {
             // ** Get element with specified id, only
-            return (parentElem||document).querySelector(selector);
+            return (parentElem||document).querySelector(selectors);
         }
     }
     else
     {
         // ** Check if element exist before returning it
-        if((parentElem||document).querySelectorAll(selector).length > 0)
+        if((parentElem||document).querySelectorAll(selectors).length > 0)
         {
-            return (parentElem||document).querySelectorAll(selector);
+            return (parentElem||document).querySelectorAll(selectors);
         }
     };
     
