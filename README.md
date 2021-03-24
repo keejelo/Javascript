@@ -5,7 +5,7 @@ Syntax:
 <pre>
 getEl(selectors, parentElem);
 
-// if parentElem not used then defaults to: document
+// if parentElem is not used then it defaults to: document
 </pre>
 
 Return value:<br />
