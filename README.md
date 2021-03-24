@@ -4,9 +4,8 @@ Javascript getElement wrapper function, combined shorthand for .querySelector() 
 ## Syntax
 <pre>
 getEl(selectors, parentElem);
-
-// if parentElem is not used then it defaults to: document
 </pre>
+If parentElem is not used then it defaults to: document
 
 ## Return value
 Returns either a NodeList containing all matching element nodes, one single element if using '#id'<br />
