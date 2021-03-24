@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for .querySelector() and .querySelectorAll()
-// Version: 1.0
+// Version: 0.5
 // Created by: keejelo
 // Year: 2010
 //----------------------------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ var getEl = function(selector, parentElem)
     
     // ** If string starts with # (hash) element id
     if(selector.indexOf('#') != -1)
-    {    
+    {
         // ** If string contains a space or comma
         if(selector.indexOf(' ') != -1 || selector.indexOf(',') != -1)
         {
@@ -31,12 +31,13 @@ var getEl = function(selector, parentElem)
     }
     else
     {
+        // ** Check if element exist before returning it
         if((parentElem||document).querySelectorAll(selector).length > 0)
         {
             return (parentElem||document).querySelectorAll(selector);
         }
     };
-
+    
     return null;
 };
 //----------------------------------------------------------------------------------------------------
