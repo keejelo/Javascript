@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - combined shorthand for querySelector() and querySelectorAll()
-// Version: 1.01
+// Version: 0.1
 // Created by: keejelo
 // Year: 2021
 //----------------------------------------------------------------------------------------------------
@@ -13,29 +13,19 @@
 var getEl = function(s, p)
 {
     s = s.replace(/^\s+|\s+$/g, '');
-    
-    var a = (p || document).querySelectorAll(s);
-    var b = (p || document).querySelector(s);
-    
-    if(s.indexOf('#') != -1)
+
+    var a = (p || document).querySelector(s);
+    var b = (p || document).querySelectorAll(s);
+
+    if( s.indexOf('#') != -1 && (s.indexOf(' ') == -1 && s.indexOf(',') == -1) )
     {
-        if(s.indexOf(' ') != -1 || s.indexOf(',') != -1)
-        {
-            if(a.length > 0)
-            {
-                return a;
-            }  
-        }
-        else
-        {
-            return b;
-        }
+        return a;
     }
     else
     {
-        if(a.length > 0)
+        if(b.length > 0)
         {
-            return a;
+            return b;
         }
     };
     
