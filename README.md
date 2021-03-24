@@ -1,2 +1,2 @@
-# Javascript
-Javascript wrappers, functions etc.
+# Javascript getElement wrapper function
+Javascript getElement wrapper function, combined shorthand for .querySelector() and .querySelectorAll()
