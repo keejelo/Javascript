@@ -14,18 +14,16 @@ var getEl = function(s, p)
 {
     s = s.replace(/^\s+|\s+$/g, '');
 
-    var a = (p || document).querySelector(s);
-    var b = (p || document).querySelectorAll(s);
-
     if( s.indexOf('#') != -1 && (s.indexOf(' ') == -1 && s.indexOf(',') == -1) )
     {
-        return a;
+        return (p || document).querySelector(s);
     }
     else
     {
-        if(b.length > 0)
+        var a = (p || document).querySelectorAll(s);
+        if(a.length > 0)
         {
-            return b;
+            return a;
         }
     };
     
