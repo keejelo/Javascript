@@ -12,7 +12,7 @@ var x = getEl(selectors, parentElem);
 
 @parameter <code>selectors</code> : CSS selectors for getting element or a group of elements
 <br /><br />
-@parameter <code>parentElem</code> : optional, can be used to start child element search from a DOM element. If not used then it defaults to <code>document</code>
+@parameter <code>parentElem</code> : optional, can be used to start element search from a DOM element. If not used then it defaults to <code>document</code>
 
 <br />
 
