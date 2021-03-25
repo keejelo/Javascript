@@ -23,7 +23,7 @@ or <code>null</code> if no matching elements are found.<br /><br />
 <b>Note</b><br />
 In the code, <code>querySelector()</code> is only used as a way to get one single element by id, and returned as a <code>HTMLElement</code> (as normal).<br />
 All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code><br /><br />
-So for example to get the first of some element type in DOM, you have to do:<br />
+So for example to get the first matching element of some type in DOM, you have to do:<br />
 <pre>
 var x = getEl('p')[0];
 </pre>
