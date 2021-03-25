@@ -22,6 +22,6 @@ or <code>null</code> if no matching elements are found.<br /><br />
 
 <b>Note</b><br />
 In the code, <code>querySelector()</code> is only used as a way to get one single element by id, and returned as a single <code>element</code><br />
-All other element searching is done via <code>querySelectorAll()</code> and returned as <code>NodeList</code>
+All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code>
 
 
