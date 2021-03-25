@@ -21,7 +21,7 @@ Returns either a <code>NodeList</code> containing all matching element nodes, or
 or <code>null</code> if no matching elements are found.<br /><br />
 
 <b>Note</b><br />
-In this code, <code>querySelector()</code> is only used as a way to get one single element by id<br />
+In the code, <code>querySelector()</code> is only used as a way to get one single element by id<br />
 All other element search is returned via <code>querySelectorAll()</code>
 
 
