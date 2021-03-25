@@ -1,4 +1,4 @@
-# getEl(), getElement()
+# getEl()
 Javascript wrapper function, combined shorthand for
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> and 
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code>
@@ -8,12 +8,6 @@ Javascript wrapper function, combined shorthand for
 ## Syntax
 <pre>
 var x = getEl(selector, parentElem);
-
-..or the longer version that does exactly the same..
-
-var x = getElement(selector, parentElem);
-
-..or change it to whatever you like, $() or maybe $$() 
 </pre>
 
 @parameter <code>selector</code> : CSS selector for getting elements.
