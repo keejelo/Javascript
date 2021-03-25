@@ -11,8 +11,11 @@
 // or  null  if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s,p)
-{   'use strict';
+{   
+    'use strict';
+
     s = s.replace(/^\s+|\s+$/g, '');
+    
     if(s.indexOf('#') != -1 && s.indexOf(' ') == -1 && s.indexOf(',') == -1)
     {
         return (p || document).querySelector(s);
@@ -25,6 +28,7 @@ var getEl = function(s,p)
             return a;
         }
     };
+    
     return null;
 };
 //----------------------------------------------------------------------------------------------------
