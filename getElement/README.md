@@ -1,4 +1,4 @@
-# Javascript getElement
+# Javascript function: getElement
 Javascript <code>getElement</code> wrapper function, combined shorthand for
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> and 
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code>
