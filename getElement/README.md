@@ -9,7 +9,7 @@ Javascript getElement wrapper function, combined shorthand for
 <pre>
 var x = getEl(selectors, parentElem);
 </pre>
-Parameter <code>parentElem</code> is optional
+Parameter <code>parentElem</code> is optional.<br />
 If not used then it defaults to: <code>document</code>
 
 <br />
