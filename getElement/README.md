@@ -7,10 +7,10 @@ Javascript getElement wrapper function, combined shorthand for
 
 ## Syntax
 <pre>
-var x = getEl(selectors, parentElem);
+var x = getEl(selector, parentElem);
 </pre>
 
-@parameter <code>selectors</code> : CSS selectors for getting element or a group of elements.
+@parameter <code>selector</code> : CSS selector for getting elements.
 <br /><br />
 @parameter <code>parentElem</code> : optional, can be used to start element search from a DOM element. If not used then it defaults to <code>document</code>
 
