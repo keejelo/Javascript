@@ -18,4 +18,10 @@ var x = getEl(selector, parentElem);
 
 ## Return value
 Returns either a <code>NodeList</code> containing all matching element nodes, or one single element if using <code>'#id'</code>,<br />
-or <code>null</code> if no matching elements are found.
+or <code>null</code> if no matching elements are found.<br /><br />
+
+<b>Note</b><br />
+In this code, <code>querySelector()</code> is only used as a way to get one single element by id<br />
+All other element search is returned via <code>querySelectorAll()</code>
+
+
