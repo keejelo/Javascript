@@ -1,2 +1,2 @@
 # Javascript
-Javascript wrappers, functions etc.
+Javascript wrappers and functions etc.
