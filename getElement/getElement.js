@@ -4,7 +4,7 @@
 // Created by: keejelo
 // Year: 2021
 //----------------------------------------------------------------------------------------------------
-// Syntax: getEl(selectors, parentElem);  // <-- if parentElem not used then it defaults to: document
+// Syntax: getEl(selector, parentElem);  // <-- if parentElem not used then it defaults to: document
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using '#id'
