@@ -27,5 +27,5 @@ So for example to get the first matching element of some type in DOM, you have t
 <pre>
 var x = getEl('p')[0];
 </pre>
-
+..gets the first <code>&lt;p&gt;</code> element in DOM
 
