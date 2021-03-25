@@ -26,6 +26,7 @@ All other element searching is done via <code>querySelectorAll()</code> and retu
 So for example to get the first matching element of some type in DOM, you have to do:<br />
 <pre>
 // Get the first &lt;p&gt; element in DOM
+
 var x = getEl('p')[0];
 </pre>
 
