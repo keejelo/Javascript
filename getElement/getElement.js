@@ -11,7 +11,7 @@
 // or  null  if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s,p)
-{   
+{
     s = s.replace(/^\s+|\s+$/g, '');
     
     if(s.indexOf('#') != -1 && s.indexOf(' ') == -1 && s.indexOf(',') == -1)
@@ -21,6 +21,7 @@ var getEl = function(s,p)
     else
     {
         var a = (p || document).querySelectorAll(s);
+        
         if(a.length > 0)
         {
             return a;
