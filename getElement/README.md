@@ -13,7 +13,7 @@ var x = getEl(selector, parentElem);
 
 var x = getElement(selector, parentElem);
 
-.. or change it to whatever you like, $() or maybe $$() 
+..or change it to whatever you like, $() or maybe $$() 
 </pre>
 
 @parameter <code>selector</code> : CSS selector for getting elements.
