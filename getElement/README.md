@@ -8,6 +8,10 @@ Javascript wrapper function, combined shorthand for
 ## Syntax
 <pre>
 var x = getEl(selector, parentElem);
+
+..or the longer version that does exactly the same..
+
+var x = getElement(selector, parentElem);
 </pre>
 
 @parameter <code>selector</code> : CSS selector for getting elements.
