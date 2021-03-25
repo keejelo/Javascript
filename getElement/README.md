@@ -9,7 +9,7 @@ Javascript <code>getElement</code> wrapper function, combined shorthand for
 <pre>
 var x = getEl(selector, parentElem);
 
-..or
+..or..
 
 var x = getElement(selector, parentElem);
 </pre>
