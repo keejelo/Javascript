@@ -10,9 +10,9 @@ Javascript getElement wrapper function, combined shorthand for
 var x = getEl(selectors, parentElem);
 </pre>
 
-@parameter <code>selectors</code> = CSS selectors for getting element
+@parameter <code>selectors</code> : CSS selectors for getting element or a group of elements
 <br /><br />
-@parameter <code>parentElem</code> = optional. If not used then it defaults to <code>document</code>
+@parameter <code>parentElem</code> : optional, if not used then it defaults to <code>document</code>
 
 <br />
 
