@@ -12,7 +12,7 @@ var x = getEl(selectors, parentElem);
 
 Parameter 1: <code>selectors</code> are CSS selectors for getting element
 <br />
-Parameter 2: <code>parentElem</code> is optional. If not used then it defaults to: <code>document</code>
+Parameter 2: <code>parentElem</code> is optional. If not used then it defaults to <code>document</code>
 
 <br />
 
