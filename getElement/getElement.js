@@ -11,7 +11,7 @@
 // or  null  if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
 var getEl = function(s,p)
-{
+{   "use strict";
     s = s.replace(/^\s+|\s+$/g, '');
     if(s.indexOf('#') != -1 && s.indexOf(' ') == -1 && s.indexOf(',') == -1)
     {
