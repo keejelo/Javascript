@@ -26,9 +26,10 @@ Getting element by id<br />
 var x = getEl('#myId');
 
 </pre>
-<code>querySelector()</code> is used internally for this, and it returns a <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement">HTMLElement</a></code>
+<code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, and it returns a <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement">HTMLElement</a></code>
 
 <br />
+
 All other element searching is done via <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code> and returned as a <code>NodeList</code> as normal:<br /><br />
 
 <pre>
