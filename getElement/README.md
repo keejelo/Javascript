@@ -55,6 +55,14 @@ var myParent = getEl('#myId');
 // Get all &lt;p&gt; elements with classname '.myClass' that are descendants of the parent element whose id is 'myId'
 
 var b = getEl('p.myClass', myParent);
+
+
+// Although the below code would produce the same result
+
+var c = getEl('#myId p.myClass');
+
+// .. there might be times when you need to do it the former way
+
 </pre>
 
 
