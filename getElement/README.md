@@ -19,7 +19,7 @@ Returns either a <code>NodeList</code> containing all matching element nodes, or
 or <code>null</code> if no matching elements are found.<br /><br />
 
 #### Note
-In the code, <code>querySelector()</code> is only used when getting element by id, so it can be used, return a single HTMLElement<br />
+In the code, <code>querySelector()</code> is only used when getting element by id, so it can be used like below, returns a single HTMLElement<br />
 <pre>
 // Get element by id
 
