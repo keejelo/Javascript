@@ -43,4 +43,22 @@ var x = getEl('p')[0];
 
 </pre>
 
+<br />
+
+Using the second parameter to start element search from a deeper place within in DOM:<br />
+<pre>
+// Get some element with an id
+
+var parentEl = getEl('#myId');
+
+
+// Get all &lt;p&gt; elements with classname '.myClass' that are descendants of the parent element with id 'myId'
+
+var b = getEl('p.myClass', parentEl);
+</pre>
+
+
+
+
+
 
