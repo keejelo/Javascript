@@ -28,10 +28,13 @@ var x = getEl('#myId');
 </pre>
 <br />
 All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code><br /><br />
-So for example to get the first matching element of some type in DOM, you have to do it the <code>querySelectorAll()</code> way:
-<br /><br />
 
 <pre>
+// Get all &lt;p&gt; elemente in DOM
+
+var x = getEl('p');
+
+
 // Get the first &lt;p&gt; element in DOM
 
 var x = getEl('p')[0];
