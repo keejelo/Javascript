@@ -45,7 +45,7 @@ var x = getEl('p')[0];
 
 <br />
 
-Using the second parameter to start element search from a deeper place within in DOM:<br />
+Using the optional second parameter to start element search from a deeper place within in DOM:<br />
 <pre>
 // Get some element with an id
 
