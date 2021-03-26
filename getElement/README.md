@@ -26,7 +26,7 @@ Getting element by id<br />
 var x = getEl('#myId');
 
 </pre>
-<code>querySelector()</code> is used internally for this and it returns a <code>HTMLElement</code>
+<code>querySelector()</code> is used internally for this, and it returns a <code>HTMLElement</code>
 
 <br />
 All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code> as normal:<br /><br />
