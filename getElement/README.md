@@ -18,7 +18,7 @@ var x = getEl(selector, parentElem);
 Returns either a <code>NodeList</code> containing all matching element nodes, or one single element if using <code>'#id'</code>,<br />
 or <code>null</code> if no matching elements are found.<br /><br />
 
-#### Note
+#### Example
 Getting element by id<br />
 <pre>
 // Get element by id
