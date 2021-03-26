@@ -30,8 +30,7 @@ var x = getEl('#myId');
 
 <br />
 
-All other element searching is done via <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code> and returned as a <code>NodeList</code> as normal:<br /><br />
-
+All other element searching is done via <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code> and returned as a <code>NodeList</code> as normal:<br />
 <pre>
 // Get all &lt;p&gt; elements in DOM
 
