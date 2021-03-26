@@ -29,7 +29,7 @@ var x = getEl('#myId');
 <code>querySelector()</code> is used internally for this, and it returns a <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement">HTMLElement</a></code>
 
 <br />
-All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code> as normal:<br /><br />
+All other element searching is done via <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code> and returned as a <code>NodeList</code> as normal:<br /><br />
 
 <pre>
 // Get all &lt;p&gt; elements in DOM
