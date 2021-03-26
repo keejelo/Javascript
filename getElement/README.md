@@ -1,5 +1,5 @@
 # getEl() , getElement()
-Javascript wrapper function, shorthand for getting elements like <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code>
+Function, shorthand for getting elements like <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code>
 
 <br />
 
