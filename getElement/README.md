@@ -27,7 +27,7 @@ var x = getEl('#myId');
 
 </pre>
 <br />
-All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code><br /><br />
+All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code> as normal:<br /><br />
 
 <pre>
 // Get all &lt;p&gt; elements in DOM
