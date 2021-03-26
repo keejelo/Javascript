@@ -49,12 +49,12 @@ Using the second parameter to start element search from a deeper place within in
 <pre>
 // Get some element with an id
 
-var parentEl = getEl('#myId');
+var myParent = getEl('#myId');
 
 
-// Get all &lt;p&gt; elements with classname '.myClass' that are descendants of the parent element with id 'myId'
+// Get all &lt;p&gt; elements with classname '.myClass' that are descendants of the parent element whose id is 'myId'
 
-var b = getEl('p.myClass', parentEl);
+var b = getEl('p.myClass', myParent);
 </pre>
 
 
