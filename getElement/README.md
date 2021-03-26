@@ -26,7 +26,7 @@ Getting element by id<br />
 var x = getEl('#myId');
 
 </pre>
-<code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this.
+<code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, returns a <code>HTMLElement</code> on success, else it returns <code>null</code>
 
 <br />
 
