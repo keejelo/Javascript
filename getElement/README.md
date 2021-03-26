@@ -19,7 +19,7 @@ Returns either a <code>NodeList</code> containing all matching element nodes, or
 In both cases it returns <code>null</code> if no matching elements are found.<br /><br />
 
 #### Examples
-Getting element by id<br />
+Getting an element with a specified id:<br />
 <pre>
 // Get element by id
 
