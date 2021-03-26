@@ -1,5 +1,5 @@
 # getEl() , getElement()
-Function, shorthand for getting elements in DOM.
+Function, shorthand for <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></code> to get elements in DOM. 
 
 <br />
 
