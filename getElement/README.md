@@ -30,7 +30,7 @@ var x = getEl('#myId');
 All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code><br /><br />
 
 <pre>
-// Get all &lt;p&gt; elemente in DOM
+// Get all &lt;p&gt; elements in DOM
 
 var x = getEl('p');
 
