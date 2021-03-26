@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------
-// GetElement - shorthand querySelectorAll()
+// GetElement - shorthand for querySelectorAll()
 // Version: 1.0
 // Created by: keejelo
 // Year: 2021
