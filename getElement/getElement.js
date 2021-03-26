@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------
-// GetElement - combined shorthand for querySelector() and querySelectorAll()
+// GetElement - shorthand querySelectorAll()
 // Version: 0.1
 // Created by: keejelo
 // Year: 2021
