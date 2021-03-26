@@ -10,7 +10,7 @@
 // Returns either a NodeList containing all matching element nodes, one single element if using '#id'
 // or  null  if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
-var  getEl = function(s,p)
+var  getEl = getElement = function(s,p)
 {
     s = s.replace(/^\s+|\s+$/g, '');
 
