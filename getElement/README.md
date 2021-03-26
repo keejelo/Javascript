@@ -20,17 +20,19 @@ or <code>null</code> if no matching elements are found.<br /><br />
 
 <b>Note</b><br />
 In the code, <code>querySelector()</code> is only used when getting element by id,<br />
+<pre>
+// Get element by id
+
+var x = getEl('#myId');
+
+</pre>
+<br />
 all other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code><br /><br />
 So for example to get the first matching element of some type in DOM, you have to do it the <code>querySelectorAll()</code> way:<br />
 <pre>
 // Get the first &lt;p&gt; element in DOM
 
 var x = getEl('p')[0];
-
-
-// Get element by id
-
-var x = getEl('#myId');
 
 </pre>
 
