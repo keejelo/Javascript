@@ -8,7 +8,7 @@ Javascript wrapper function, shorthand for getting elements like <code><a href="
 var x = getEl(selector, parentElem);
 </pre>
 
-@parameter <code>selector</code> : CSS selector for getting elements.
+@parameter <code>selector</code> : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">CSS selector</a> for getting elements.
 <br /><br />
 @parameter <code>parentElem</code> : optional, can be used to start element search from a DOM element. If not used then it defaults to <code>document</code>
 
