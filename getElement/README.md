@@ -19,13 +19,15 @@ Returns either a <code>NodeList</code> containing all matching element nodes, or
 or <code>null</code> if no matching elements are found.<br /><br />
 
 #### Note
-Getting element by id (<code>querySelector()</code> is used internally for this)<br />
+Getting element by id<br />
 <pre>
 // Get element by id
 
 var x = getEl('#myId');
 
 </pre>
+( <code>querySelector()</code> is used internally for this )
+
 <br />
 All other element searching is done via <code>querySelectorAll()</code> and returned as a <code>NodeList</code> as normal:<br /><br />
 
