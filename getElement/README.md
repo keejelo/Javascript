@@ -27,7 +27,7 @@ In both cases it returns <code>null</code> if no matching elements are found.<br
 <br />
 
 ## Examples
-Getting an element with a specified id:<br />
+Getting element with a specified id:<br />
 <pre>
 // Get element by id
 
