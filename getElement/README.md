@@ -6,6 +6,12 @@ Function, shorthand for getting elements in DOM, based on <code><a href="https:/
 ## Syntax
 <pre>
 var x = getEl(selector, parentElement);
+
+// ..or..
+
+var x = getElement(selector, parentElement);
+
+// ..which does exactly the same, but is more descriptive..
 </pre>
 
 @parameter <code>selector</code> = <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">CSS selector</a> for getting elements.
