@@ -9,7 +9,8 @@
 // Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using:
 // '#id' or 'html' or 'head' or 'body'
-// or  null  if no matching elements are found.
+//
+// Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
 var  getEl = getElement = function(s,p)
 {
