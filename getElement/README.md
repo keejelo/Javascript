@@ -23,7 +23,7 @@ var x = getElement(selector, parentElement);
 ## Return value
 Returns either a <code>NodeList</code> containing all matching element nodes, or one single element if using: <code>'#id'</code> , <code>'html'</code> , <code>'head'</code> , <code>'title'</code> , <code>'body'</code><br />
 <br />
-In both cases it returns <code>null</code> if no matching elements are found.<br /><br />
+In all cases it returns <code>null</code> if no matching elements are found.<br /><br />
 
 <br />
 
