@@ -8,7 +8,7 @@
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, one single element if using:
-// '#id' or 'html' or 'head' or 'body'
+// '#id' , 'html' , 'head' , 'title' , 'body'
 //
 // Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
@@ -19,6 +19,7 @@ var  getEl = getElement = function(s,p)
     if((s.indexOf('#') !== -1 
       ||s.indexOf('html') !== -1
       ||s.indexOf('head') !== -1
+      ||s.indexOf('title') !== -1
       ||s.indexOf('body') !== -1 )
       && (s.indexOf(' ') === -1 && s.indexOf(',') === -1)
     )
