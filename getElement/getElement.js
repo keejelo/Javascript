@@ -12,7 +12,7 @@
 //
 // Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
-var  getEl = getElement = function(s,p)
+var getEl = getElement = function(s,p)
 {
     s = s.replace(/^\s+|\s+$/g,'');
 
