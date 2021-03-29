@@ -7,7 +7,7 @@
 // Syntax: getEl(selector, parentElem);  // <-- if parentElem not used then it defaults to: document
 //
 // Return value:
-// Returns either a NodeList containing all matching element nodes, one single element if using:
+// Returns either a NodeList containing all matching element nodes, or one single element if using:
 // '#id' , 'html' , 'head' , 'title' , 'body'
 //
 // Returns null if no matching elements are found.
