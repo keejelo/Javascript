@@ -15,12 +15,7 @@ var  getEl = getElement = function(s,p)
 {
     s = s.replace(/^\s+|\s+$/g,'');
 
-    if(   s.indexOf('#') !== -1 
-       || s.indexOf('html') !== -1
-       || s.indexOf('head') !== -1
-       || s.indexOf('body') !== -1
-       && (s.indexOf(' ') === -1 && s.indexOf(',') === -1)
-      )
+    if(s.indexOf('#') !== -1 && s.indexOf(' ') === -1 && s.indexOf(',') === -1)
     {
         return (p || document).querySelector(s);
     }
