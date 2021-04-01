@@ -70,7 +70,7 @@ var x = getEl('p.myClass', myParent);
 
 var x = getEl('#myId p.myClass');
 
-// .. there might be times when you need to do it the former way
+// .. there might be times when it's more practical to do it the former way
 
 </pre>
 
