@@ -4,7 +4,12 @@
 // Created by: keejelo
 // Year: 2021
 //----------------------------------------------------------------------------------------------------
-// Syntax: getEl(selector, parentElem);  // <-- if parentElem not used then it defaults to: document
+// Syntax:
+// getEl(selector, parentElem);
+// ..or..
+// getElement(selector, parentElem);
+//
+// If param "parentElem" not used then it defaults to: document
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, or one single element if using:
