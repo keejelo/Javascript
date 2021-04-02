@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------------
 // GetElement - shorthand for querySelector() and querySelectorAll()
-// Version: 1.001
+// Version: 1.002
 // Created by: keejelo
 // Year: 2021
 //----------------------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@
 //
 // Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
-var getEl = getElement = function(s,p)
+var getEl = function(s,p)
 {
     s = s.replace(/^\s+|\s+$/g,'');
 
@@ -28,7 +28,7 @@ var getEl = getElement = function(s,p)
     else
     {
         var a = (p || document).querySelectorAll(s);
-
+        
         if(a.length > 0)
         {
             return a;
@@ -36,6 +36,10 @@ var getEl = getElement = function(s,p)
     };
     
     return null;
+};
+if(typeof getElement === 'undefined')
+{
+    getElement = getEl;
 };
 //----------------------------------------------------------------------------------------------------
 // END: GetElement
