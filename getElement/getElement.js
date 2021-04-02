@@ -5,9 +5,9 @@
 // Year: 2021
 //----------------------------------------------------------------------------------------------------
 // Syntax:
-// getEl(selector, parentElem);
+// var x = getEl(selector, parentElem);
 // ..or the longer more descriptive one below, both do exactly the same thing..
-// getElement(selector, parentElem);
+// var x = getElement(selector, parentElem);
 //
 // If param "parentElem" not used then it defaults to: document
 //
