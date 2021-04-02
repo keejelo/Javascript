@@ -17,10 +17,12 @@
 //
 // Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
-var getEl = function(s,p)
+var getEl = getElement = function(s,p)
 {
+    // ** Trim string whitespace
     s = s.replace(/^\s+|\s+$/g,'');
 
+    // ** If single element only, return it
     if( ( s.indexOf('#')     !== -1
        || s.indexOf('html')  !== -1
        || s.indexOf('head')  !== -1
@@ -30,21 +32,18 @@ var getEl = function(s,p)
     {
         return (p || document).querySelector(s);
     }
+    // ** Else return list of elements
     else
     {
         var a = (p || document).querySelectorAll(s);
-        
         if(a.length > 0)
         {
             return a;
         }
     };
     
+    // ** If no element is found return null
     return null;
-};
-if(typeof getElement === 'undefined')
-{
-    getElement = getEl;
 };
 //----------------------------------------------------------------------------------------------------
 // END: GetElement
