@@ -9,7 +9,7 @@
 // ..or the longer more descriptive one below, both do exactly the same thing..
 // var x = getElement(selector, parentElem);
 //
-// If param "parentElem" not used then it defaults to: document
+// If the second parameter "parentElem" is not used then it defaults to: document
 //
 // Return value:
 // Returns either a NodeList containing all matching element nodes, or one single element if using:
