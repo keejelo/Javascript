@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------------------------------------
 // Syntax:
 // getEl(selector, parentElem);
-// ..or..
+// ..or the longer more descriptive one below, both do exactly the same thing..
 // getElement(selector, parentElem);
 //
 // If param "parentElem" not used then it defaults to: document
