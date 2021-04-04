@@ -6,8 +6,13 @@
 //----------------------------------------------------------------------------------------------------
 // Syntax:
 // var x = getEl(selector, parentElem);
-// ..or the longer more descriptive one below, both do exactly the same thing..
+//
+// ..or if not already defined by other library, you can use: $() and getElement()
+//
+// var x = $(selector, parentElem);
+//
 // var x = getElement(selector, parentElem);
+//
 //
 // If the second parameter "parentElem" is not used then it defaults to: document
 //
@@ -18,7 +23,7 @@
 //
 // Returns null if no matching elements are found.
 //----------------------------------------------------------------------------------------------------
-var getEl = getElement = function(s,p)
+var getEl = function(s,p)
 {
     // ** Trim string whitespace
     s = s.replace(/^\s+|\s+$/g,'');
@@ -50,6 +55,14 @@ var getEl = getElement = function(s,p)
     // ** If no element is found
     return null;
 };
+if(typeof getElement === 'undefined')
+{
+    var getElement = getEl;
+}
+if(typeof $ === 'undefined')
+{
+    var $ = getEl;
+}
 //----------------------------------------------------------------------------------------------------
 // END: GetElement
 //----------------------------------------------------------------------------------------------------
