@@ -28,14 +28,11 @@ var getEl = getElement = function(s,p)
        || s.indexOf('head')  !== -1
        || s.indexOf('title') !== -1
        || s.indexOf('body')  !== -1
-       ) 
-       && ( s.indexOf(' ') === -1 
-         && s.indexOf(',') === -1 
-         && s.indexOf(':') === -1
-         && s.indexOf('>') === -1
-         && s.indexOf('~') === -1
-       )
-    )
+       ) && ( s.indexOf(' ') === -1 
+           && s.indexOf(',') === -1 
+           && s.indexOf(':') === -1
+           && s.indexOf('>') === -1
+           && s.indexOf('~') === -1 ) )
     {
         return (p || document).querySelector(s);
     }
