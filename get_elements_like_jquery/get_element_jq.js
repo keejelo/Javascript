@@ -8,7 +8,7 @@
 // One dollar ($) returns one element, or the first node in a nodelist
 // var x = $('div');
 //
-// Two dollars ($$) returns a nodelist
+// Two dollars ($$) returns a nodelist, all the elements that match selector
 // var x = $$('div');
 //
 //-------------------------------------------------------------------------------------
