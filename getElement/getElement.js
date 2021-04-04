@@ -61,7 +61,7 @@ if(typeof getElement === 'undefined')
 }
 
 /*
-// ** Uncomment this to use dollarsign as function invoker
+// ** Uncomment this to use dollarsign as function reference
 if(typeof $ === 'undefined')
 {
     var $ = getEl;
