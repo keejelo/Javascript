@@ -13,23 +13,23 @@
 //
 //-------------------------------------------------------------------------------------
 // ** Extend HTMLElement prototype
-HTMLElement.prototype.$ = function(selector)
+HTMLElement.prototype.$ = function(s)
 {
-    return this.querySelector(selector);
+    return this.querySelector(s);
 };
-HTMLElement.prototype.$$ = function(selector)
+HTMLElement.prototype.$$ = function(s)
 {
-    return this.querySelectorAll(selector);
+    return this.querySelectorAll(s);
 };
 
 // ** Create function for when parent is: document
-var $ = function(selector)
+var $ = function(s)
 {
-    return document.querySelector(selector);
+    return document.querySelector(s);
 };
-var $$ = function(selector)
+var $$ = function(s)
 {
-    return document.querySelectorAll(selector);
+    return document.querySelectorAll(s);
 };
 
 //-------------------------------------------------------------------------------------
