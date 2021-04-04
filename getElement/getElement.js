@@ -50,7 +50,7 @@ var getEl = function(s,p)
         {
             return a;
         }
-    };
+    }
 
     // ** If no element is found
     return null;
