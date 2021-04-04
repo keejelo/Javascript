@@ -6,29 +6,26 @@
 // Two dollars ($$) returns a nodelist
 //
 //-------------------------------------------------------------------------------------
-// ** One dollar ($) returns one element, or the first node in a nodelist
 // ** Extend HTMLElement prototype
 HTMLElement.prototype.$ = function(selector)
 {
     return this.querySelector(selector);
 };
+HTMLElement.prototype.$$ = function(selector)
+{
+    return this.querySelectorAll(selector);
+};
+
 // ** Create function for when parent is: document
 var $ = function(selector)
 {
     return document.querySelector(selector);
 };
-
-// ** Two dollars ($$) returns a nodelist
-// ** Extend HTMLElement prototype
-HTMLElement.prototype.$$ = function(selector)
-{
-    return this.querySelectorAll(selector);
-};
-// ** Create function for when parent is: document
 var $$ = function(selector)
 {
     return document.querySelectorAll(selector);
 };
+
 //-------------------------------------------------------------------------------------
 
 /*
