@@ -12,7 +12,8 @@
 // If the second parameter "parentElem" is not used then it defaults to: document
 //
 // Return value:
-// Returns either a NodeList containing all matching element nodes, or one single element if using:
+// Returns either a NodeList containing all matching element nodes,
+// or one single element if using:
 // '#id' , 'html' , 'head' , 'title' , 'body' , and none of the mulitple-selector chars
 //
 // Returns null if no matching elements are found.
