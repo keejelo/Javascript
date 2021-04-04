@@ -9,7 +9,7 @@
 //
 // ..or if not already defined by other library, you can use: $() and getElement()
 //
-// var x = $(selector, parentElem);
+// var x = $(selector, parentElem); // <-- to use, see bottom of this file
 //
 // var x = getElement(selector, parentElem);
 //
@@ -59,12 +59,15 @@ if(typeof getElement === 'undefined')
 {
     var getElement = getEl;
 }
+
 /*
+// ** Uncomment this to use dollarsign as function invoker
 if(typeof $ === 'undefined')
 {
     var $ = getEl;
 }
 */
+
 //----------------------------------------------------------------------------------------------------
 // END: GetElement
 //----------------------------------------------------------------------------------------------------
