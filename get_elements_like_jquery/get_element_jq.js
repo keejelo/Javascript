@@ -1,9 +1,15 @@
 //-------------------------------------------------------------------------------------
-// Get elements similar to jQuery with dollarsigns ($ and $$)
-//
+// Get elements similar to jQuery with dollarsigns ($ and $$), with chaining ability
+// Version: 1.0
+// Created by: keejelo
+// Year: 2021
+//-------------------------------------------------------------------------------------
+// Syntax:
 // One dollar ($) returns one element, or the first node in a nodelist
+// var x = $('div');
 //
 // Two dollars ($$) returns a nodelist
+// var x = $$('div');
 //
 //-------------------------------------------------------------------------------------
 // ** Extend HTMLElement prototype
@@ -36,7 +42,7 @@ addEventListener('load', function()
 {
     var div = $('div');
     
-    var p = div.$('p');
+    var p = div.$('p');  // <-- chaining
     
     console.log(div);
     console.log(p);
