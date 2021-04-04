@@ -37,7 +37,7 @@ var getEl = getElement = function(s,p)
     {
         return (p || document).querySelector(s);
     }
-    // ** Else if list of elements
+    // ** Else if multiple elements
     else
     {
         var a = (p || document).querySelectorAll(s);
