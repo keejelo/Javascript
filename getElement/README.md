@@ -21,7 +21,7 @@ var x = getElement(selector, parentElement);
 <br />
 
 ## Return value
-Returns either a <code>NodeList</code> containing all matching element nodes, or ONLY ONE single element if using: <code>'#id'</code> , <code>'html'</code> , <code>'head'</code> , <code>'title'</code> , <code>'body'</code> (the elements that normally only hase one single instance of it in a html document)<br />
+Returns either a <code>NodeList</code> containing all matching element nodes, or ONLY ONE single element if using: <code>'#id'</code> , <code>'html'</code> , <code>'head'</code> , <code>'title'</code> , <code>'body'</code> (in other words the elements that normally only has one single instance of it in a html document)<br />
 <br />
 In all cases it returns <code>null</code> if no matching elements are found.<br /><br />
 
