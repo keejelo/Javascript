@@ -42,7 +42,7 @@ var x = getEl('body');
 // etc.
 
 </pre>
-Elements that normally only occur once in a page/or are unique do not need indexing ([0]) since <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, returns a <code>HTMLElement</code> on success, else it returns <code>null</code>
+Elements that normally only occur once in a page/or are unique do not need indexing [0] since <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, returns a <code>HTMLElement</code> on success, else it returns <code>null</code>
 
 <br />
 
