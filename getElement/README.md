@@ -28,18 +28,21 @@ In all cases it returns <code>null</code> if no matching elements are found.<br 
 <br />
 
 ## Examples
-Getting element:<br />
+Getting an element<br />
 <pre>
+// Based on some id
 var x = getEl('#myId');
 
+// Get head element
 var x = getEl('head');
 
+// Get body element
 var x = getEl('body');
 
 // etc.
 
 </pre>
-<code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, returns a <code>HTMLElement</code> on success, else it returns <code>null</code>
+Elements that normally only occur once in a page/or are unique do not need indexing ([0]) since <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></code> is used internally for this, returns a <code>HTMLElement</code> on success, else it returns <code>null</code>
 
 <br />
 
