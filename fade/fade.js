@@ -3,7 +3,7 @@
 //-------------------------------------------------
 // Parameters:
 // @el : element
-// @dir : true = fade out | false = fade in
+// @dir : false = fade in | true = fade out
 // @speed : animation speed
 //-------------------------------------------------
 var fade = function(el, dir, speed)
