@@ -11,20 +11,32 @@
 </style>
 <script src="fade.js"></script>
 <script type="text/javascript">
+
+var hello = function()
+{
+    console.log('hello');
+};
+
+var world = function()
+{
+    console.log('world');
+};
+
+// ** Window load event
 window.addEventListener('load', function()
 {
     var myDiv = document.getElementById('myDiv');
     var fadeInBtn = document.getElementById('fadeInBtn');
     var fadeOutBtn = document.getElementById('fadeOutBtn');
-    
+
     fadeInBtn.addEventListener('click', function()
     {
-        fade(myDiv, false);
+        fade(myDiv, false, 0, hello);
     });
-    
+
     fadeOutBtn.addEventListener('click', function()
     {
-        fade(myDiv, true);
+        fade(myDiv, true, 0, world);
     });
 });
 </script>
