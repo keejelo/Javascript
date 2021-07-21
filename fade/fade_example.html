@@ -15,14 +15,14 @@
 
 <script type="text/javascript">
 
-var hello = function()
+var msgIn = function()
 {
-    console.log('hello');
+    console.log('fading in');
 };
 
-var world = function()
+var msgOut = function()
 {
-    console.log('world');
+    console.log('fading out');
 };
 
 // ** Window load event
@@ -31,16 +31,34 @@ window.addEventListener('load', function()
     var myDiv = document.getElementById('myDiv');
     var fadeInBtn = document.getElementById('fadeInBtn');
     var fadeOutBtn = document.getElementById('fadeOutBtn');
+    var fadeAltBtn = document.getElementById('fadeAltBtn');
+    var bAlt = true;
 
     fadeInBtn.addEventListener('click', function()
     {
-        fade(myDiv, false, 0, hello);
+        fade(myDiv, false, 0, msgIn);
+        bAlt = false;
     });
 
     fadeOutBtn.addEventListener('click', function()
     {
-        fade(myDiv, true, 0, world);
+        fade(myDiv, true, 0, msgOut);
+        bAlt = true;
     });
+    
+    fadeAltBtn.addEventListener('click', function()
+    {
+        if(bAlt)
+        {
+            fade(myDiv, false, 0, msgIn);
+            bAlt = false;
+        }
+        else
+        {
+            fade(myDiv, true, 0, msgOut);
+            bAlt = true;
+        }
+    });    
 });
 </script>
 </head>
@@ -49,6 +67,11 @@ window.addEventListener('load', function()
     <div id="myDiv">This DIV element can be faded in and out!</div>
     <p>&nbsp;</p>
     <button id="fadeInBtn">Fade in</button> <button id="fadeOutBtn">Fade out</button>
+    <p>&nbsp;</p>
+    <p>
+        Or alternate: <button id="fadeAltBtn">Fade in/out</button>
+    </p>
+    
 </div>
 </body>
 </html>
