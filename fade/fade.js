@@ -14,10 +14,7 @@ var fade = function(el, dir, spd)
     {
         (dir) ? n-- : n++;
         el.style.opacity = n / 10;
-        if( (!dir && n >= 10) || (dir && n <= 0) )
-        {
-            clearInterval(t);
-        }
+        (!dir && n >= 10) || (dir && n <= 0) ? clearInterval(t) : null;
     }, spd || 40);
 };
 //-------------------------------------------------
