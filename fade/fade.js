@@ -4,7 +4,7 @@
 // Parameters:
 // @el  : element
 // @dir : true = fade out | false = fade in
-// @spd : animation speed
+// @spd : animation speed (default = 40)
 //-------------------------------------------------
 var fade = function(el, dir, spd)
 {
