@@ -5,8 +5,9 @@
 // @el  : element
 // @dir : direction (true = fade out | false = fade in)
 // @spd : animation speed (default = 40)
+// @fn  : function to run after fading has finished (optional)
 //-----------------------------------------------------------------------
-var fade = function(el, dir, spd)
+var fade = function(el, dir, spd, fn)
 {
     var n;
     (dir) ? n = 10 : n = 0;
@@ -14,7 +15,11 @@ var fade = function(el, dir, spd)
     {
         (dir) ? n-- : n++;
         el.style.opacity = n / 10;
-        if((!dir && n >= 10) || (dir && n <= 0)) { clearInterval(t); }
+        if( (!dir && n >= 10) || (dir && n <= 0) )
+        {
+            clearInterval(t);
+            if(typeof fn === 'function') { fn(); }
+        }
     }, spd || 40);
 };
 //-----------------------------------------------------------------------
