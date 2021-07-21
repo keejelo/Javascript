@@ -9,12 +9,15 @@
 var fade = function(el, dir, spd)
 {
     var n;
-    (dir) ? n=10 : n=0;
+    (dir) ? n = 10 : n = 0;
     var t = setInterval(function()
     {
         (dir) ? n-- : n++;
         el.style.opacity = n / 10;
-        (n >= 10) ? clearInterval(t) : null;
+        if( (!dir && n >= 10) || (dir && n <= 0) )
+        {
+            clearInterval(t);
+        }
     }, spd || 40);
 };
 //-------------------------------------------------
