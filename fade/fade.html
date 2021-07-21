@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#myDiv
+{
+  background:#ff0000;
+  line-height:40px;
+  opacity:0;
+}
+</style>
+<script src="fade.js"></script>
+<script type="text/javascript">
+window.addEventListener('load', function()
+{
+    var myDiv = document.getElementById('myDiv');
+    var fadeInBtn = document.getElementById('fadeInBtn');
+    var fadeOutBtn = document.getElementById('fadeOutBtn');
+    
+    fadeInBtn.addEventListener('click', function()
+    {
+        fade(myDiv, false);
+    });
+    
+    fadeOutBtn.addEventListener('click', function()
+    {
+        fade(myDiv, true);
+    });
+});
+</script>
+</head>
+<body>
+<div>
+    <div id="myDiv">This is myDiv</div>
+    <p>&nbsp;</p>
+    <button id="fadeInBtn">Fade in</button> <button id="fadeOutBtn">Fade out</button>
+</div>
+</body>
+</html>
