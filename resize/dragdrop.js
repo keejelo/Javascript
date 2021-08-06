@@ -1,3 +1,5 @@
+// Depends on the file: "event_handling.js"
+
 // Usage:
 // _drag.init('someElementId');
 
