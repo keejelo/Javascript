@@ -1,11 +1,15 @@
 //----------------------------------------------------------------------------------
-// ** Resize element - keejelo 2021
+// ** Resize object module - keejelo 2021
 //----------------------------------------------------------------------------------
 // Depends on the file: "event_handling.js"
 // Usage: _resize.init('someElementId');
 //----------------------------------------------------------------------------------
 var _resize =
 {
+    getStyle : function(el, prop)
+    {
+        return (typeof getComputedStyle !== 'undefined' ? getComputedStyle(el, null) : el.currentStyle)[prop];
+    },
     init : function(id)
     {
         _resize.el = document.getElementById(id);
@@ -26,8 +30,8 @@ var _resize =
         e = e || window.event;
         _resize.startX = e.clientX;
         _resize.startY = e.clientY;
-        _resize.startWidth = parseInt(_resize.el.offsetWidth, 10);
-        _resize.startHeight = parseInt(_resize.el.offsetHeight, 10);
+        _resize.startWidth = parseInt(_resize.getStyle(_resize.el,'width'), 10);
+        _resize.startHeight = parseInt(_resize.getStyle(_resize.el,'height'), 10);
         _attachEventListener(document, 'mousemove', _resize.move, false);
         _attachEventListener(document, 'mouseup', _resize.stop, false);
         _stopEvent(e);
@@ -46,4 +50,6 @@ var _resize =
         _stopDefault(e);
     }
 };
+//----------------------------------------------------------------------------------
 // ** END: Resize object module
+//----------------------------------------------------------------------------------
