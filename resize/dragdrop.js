@@ -1,9 +1,9 @@
+//----------------------------------------------------------------------------------
+// ** Drag'n'drop - keejelo 2021
+//----------------------------------------------------------------------------------
 // Depends on the file: "event_handling.js"
-
-// Usage:
-// _drag.init('someElementId');
-
-// ** Drag'n'drop object module
+// Usage: _drag.init('someElementId');
+//----------------------------------------------------------------------------------
 var _drag =
 {
     init : function(id)
@@ -59,4 +59,3 @@ var _drag =
     }
 };
 // ** END: Drag'n'drop object module
-
