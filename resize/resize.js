@@ -5,10 +5,17 @@ var _resize =
     {
         _resize.el = document.getElementById(id);
         _resize.el.className = _resize.el.className + ' resizable';
-        var resizeHandle = document.createElement('div');
-        resizeHandle.className = 'resizeHandle';
-        _resize.el.appendChild(resizeHandle);
-        resizeHandle.addEventListener('mousedown', _resize.start, false);
+        var handle = document.createElement('div');
+        _resize.el.appendChild(handle);
+        //handle.className = 'resizeHandle';        
+        handle.style.width = '10px';
+        handle.style.height = '10px';
+        handle.style.backgroundColor = '#0000ff';
+        handle.style.position = 'absolute';
+        handle.style.right = '0';
+        handle.style.bottom = '0';
+        handle.style.cursor = 'nw-resize';
+        handle.addEventListener('mousedown', _resize.start, false);
     },
     start : function(e)
     {
