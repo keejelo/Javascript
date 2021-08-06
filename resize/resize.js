@@ -1,3 +1,6 @@
+// Depends on the file: event_handling.js
+
+
 // Usage:
 // _resize.init('someElementId');
 
@@ -8,7 +11,7 @@ var _resize =
     init : function(id)
     {
         _resize.el = document.getElementById(id);
-        _resize.el.style.position = 'relative'; // 'absolute'
+        _resize.el.style.position = 'relative';
         var handle = document.createElement('div');
         _resize.el.appendChild(handle);
         handle.style.width = '10px';
@@ -18,31 +21,32 @@ var _resize =
         handle.style.right = '0';
         handle.style.bottom = '0';
         handle.style.cursor = 'nw-resize';
-        handle.addEventListener('mousedown', _resize.start, false);
+        _attachEventListener(handle, 'mousedown', _resize.start, false);
     },
     start : function(e)
     {
         e = e || window.event;
         _resize.startX = e.clientX;
         _resize.startY = e.clientY;
-        _resize.startWidth = parseInt(getComputedStyle(_resize.el).width, 10);
-        _resize.startHeight = parseInt(getComputedStyle(_resize.el).height, 10);
-        document.addEventListener('mousemove', _resize.move, false);
-        document.addEventListener('mouseup', _resize.stop, false);
+        _resize.startWidth = parseInt(_resize.el.offsetWidth, 10);
+        _resize.startHeight = parseInt(_resize.el.offsetHeight, 10);
+        _attachEventListener(document, 'mousemove', _resize.move, false);
+        _attachEventListener(document, 'mouseup', _resize.stop, false);
+        _stopEvent(e);
+        return false;        
     },
     stop : function()
     {
-        document.removeEventListener('mousemove', _resize.move, false);
-        document.removeEventListener('mouseup', _resize.stop, false);
+        _detachEventListener(document, 'mousemove', _resize.move, false);
+        _detachEventListener(document, 'mouseup', _resize.stop, false);
     },
     move : function(e)
     {
         e = e || window.event;
         _resize.el.style.width = (_resize.startWidth + e.clientX - _resize.startX) + 'px';
         _resize.el.style.height = (_resize.startHeight + e.clientY - _resize.startY) + 'px';
-        e.preventDefault();
+        _stopDefault(e);
     }
 };
 // ** END: Resize object module
-
 
