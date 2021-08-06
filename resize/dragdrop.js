@@ -15,13 +15,11 @@ var _drag =
             {
                 return false;
             }
-
             _drag.el.handle = document.getElementById(id + '_heading');
             if(_drag.el.handle === null)
             {
                 _drag.el.handle = _drag.el;
             }
-
             _drag.el.style.position = 'absolute';
             _attachEventListener(_drag.el.handle, 'mousedown', _drag.start, false);
         }
