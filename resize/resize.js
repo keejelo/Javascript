@@ -1,4 +1,3 @@
-
 // Depends on the file: "event_handling.js"
 
 // Usage:
@@ -49,8 +48,3 @@ var _resize =
     }
 };
 // ** END: Resize object module
-
-
-
-
-
