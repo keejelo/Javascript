@@ -3,7 +3,6 @@
 // Usage:
 // _resize.init('someElementId');
 
-
 // ** Resize object module
 var _resize =
 {
