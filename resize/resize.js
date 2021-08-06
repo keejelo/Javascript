@@ -12,7 +12,7 @@ var _resize =
         _resize.el.style.position = 'absolute';
         var handle = document.createElement('div');
         _resize.el.appendChild(handle);
-        handle.innerHTML = ':::';
+        handle.innerHTML = '::';
         handle.style.position = 'absolute';
         handle.style.right = '0';
         handle.style.bottom = '0';
@@ -23,7 +23,7 @@ var _resize =
         handle.style.fontSize = '10px';
         handle.style.fontWeight = 'bold';
         handle.style.lineHeight = '10px';
-        handle.style.textAlign = 'right';
+        handle.style.textAlign = 'center';
         handle.style.backgroundColor = '#000';
         handle.style.color = '#fff';
         handle.style.cursor = 'nw-resize';
