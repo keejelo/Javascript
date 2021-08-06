@@ -11,15 +11,9 @@ var _drag =
         if(_drag.bActive !== true)
         {
             _drag.el = document.getElementById(id);
-            if(_drag.el === null)
-            {
-                return false;
-            }
+            if(_drag.el === null){return false;}
             _drag.el.handle = document.getElementById(id + '_heading');
-            if(_drag.el.handle === null)
-            {
-                _drag.el.handle = _drag.el;
-            }
+            if(_drag.el.handle === null){_drag.el.handle = _drag.el;}
             _drag.el.style.position = 'absolute';
             _attachEventListener(_drag.el.handle, 'mousedown', _drag.start, false);
         }
