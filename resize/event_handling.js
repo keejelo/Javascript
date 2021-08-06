@@ -23,7 +23,7 @@ var _attachEventListener = function(target, eventType, functionRef, capture)
             }
             catch(err)
             {
-                //_log('DEBUG: Error: Object does not support this property or method (can happen in IE8)');
+                //console.log('DEBUG: Error: Object does not support this property or method (can happen in IE8)');
             }
         };
         target.attachEvent('on' + eventType, target[functionString]);
