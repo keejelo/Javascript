@@ -41,3 +41,7 @@ var _getStyle = function(el, prop)
 {
     return (typeof getComputedStyle !== 'undefined' ? getComputedStyle(el, null) : el.currentStyle)[prop];
 };
+
+
+
+
