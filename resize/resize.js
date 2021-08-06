@@ -1,9 +1,9 @@
+//----------------------------------------------------------------------------------
+// ** Resize element - keejelo 2021
+//----------------------------------------------------------------------------------
 // Depends on the file: "event_handling.js"
-
-// Usage:
-// _resize.init('someElementId');
-
-// ** Resize object module
+// Usage: _resize.init('someElementId');
+//----------------------------------------------------------------------------------
 var _resize =
 {
     init : function(id)
@@ -31,7 +31,7 @@ var _resize =
         _attachEventListener(document, 'mousemove', _resize.move, false);
         _attachEventListener(document, 'mouseup', _resize.stop, false);
         _stopEvent(e);
-        return false;        
+        return false;
     },
     stop : function()
     {
