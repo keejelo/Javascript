@@ -1,4 +1,5 @@
-// Depends on the file: event_handling.js
+
+// Depends on the file: "event_handling.js"
 
 // Usage:
 // _resize.init('someElementId');
