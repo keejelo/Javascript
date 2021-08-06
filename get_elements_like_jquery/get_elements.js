@@ -1,9 +1,5 @@
 //---------------------------------------------------------------------------------------------------
 // Get elements similar to jQuery with dollarsigns ($ and $$), with chaining ability
-// Version: 1.0
-// Created by: keejelo
-// Year: 2021
-// Inspiration: https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/QuerySelector
 //---------------------------------------------------------------------------------------------------
 // Syntax:
 // One dollar ($) returns one element, or the first node in a nodelist
