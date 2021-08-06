@@ -25,10 +25,8 @@ _attachEventListener(window, 'load', function()
     _attachEventListener(div, 'click', function init()
     {
         _detachEventListener(div, 'click', init, false);
-
         _drag.init('myDiv');
         _resize.init('myDiv');
-
     }, false);
 });
 </script>
