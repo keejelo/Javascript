@@ -3,7 +3,6 @@
 // Usage:
 // _drag.init('someElementId');
 
-
 // ** Drag'n'drop object module
 var _drag =
 {
