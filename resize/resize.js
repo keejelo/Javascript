@@ -40,7 +40,6 @@ var _resize =
         e = e || window.event;
         _resize.el.style.width = (_resize.startWidth + e.clientX - _resize.startX) + 'px';
         _resize.el.style.height = (_resize.startHeight + e.clientY - _resize.startY) + 'px';
-        console.log(_resize.startWidth, e, _resize.startX, _resize.el.style.width);
         e.preventDefault();
     }
 };
