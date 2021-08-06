@@ -85,13 +85,11 @@ var _stopEvent = function(e)
 // ** Stop default event action (xbrowser-legacy)
 var _stopDefault = function(e)
 {
+    e.returnValue = false;
+    
     if(typeof e.preventDefault !== 'undefined')
     {
         e.preventDefault();
-    }
-    else
-    {
-        e.returnValue = false;
     }
 };
 
