@@ -19,14 +19,16 @@
 <script src="resize.js"></script>
 <script>
 // ** Window load
-window.addEventListener('load', function()
+_attachEventListener(window, 'load', function()
 {
     var div = document.getElementById('myDiv');
-    div.addEventListener('click', function init()
+    _attachEventListener(div, 'click', function init()
     {
-        div.removeEventListener('click', init, false);
+        _detachEventListener(div, 'click', init, false);
+
         _drag.init('myDiv');
         _resize.init('myDiv');
+
     }, false);
 });
 </script>
