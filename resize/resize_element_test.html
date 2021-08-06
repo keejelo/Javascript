@@ -21,15 +21,8 @@
 // ** Window load
 window.addEventListener('load', function()
 {
-    var div = document.getElementById('myDiv');
-    div.addEventListener('click', function init()
-    {
-        div.removeEventListener('click', init, false);
-
-        _drag.init('myDiv');
-        _resize.init('myDiv');
-
-    }, false);
+    _drag.init('myDiv');
+    _resize.init('myDiv');
 });
 </script>
 </head>
