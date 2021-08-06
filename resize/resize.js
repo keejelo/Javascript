@@ -6,10 +6,6 @@
 //----------------------------------------------------------------------------------
 var _resize =
 {
-    getStyle : function(el, prop)
-    {
-        return (typeof getComputedStyle !== 'undefined' ? getComputedStyle(el, null) : el.currentStyle)[prop];
-    },
     init : function(id)
     {
         _resize.el = document.getElementById(id);
@@ -48,7 +44,11 @@ var _resize =
         _resize.el.style.width = (_resize.startWidth + e.clientX - _resize.startX) + 'px';
         _resize.el.style.height = (_resize.startHeight + e.clientY - _resize.startY) + 'px';
         _stopDefault(e);
-    }
+    },
+    getStyle : function(el, prop)
+    {
+        return (typeof getComputedStyle !== 'undefined' ? getComputedStyle(el, null) : el.currentStyle)[prop];
+    }    
 };
 //----------------------------------------------------------------------------------
 // ** END: Resize object module
