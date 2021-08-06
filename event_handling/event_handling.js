@@ -1,6 +1,7 @@
+//----------------------------------------------------------------------------------
 // Crossbrowser and legacy supported event handling for:
 // addEventListener, removeEventListener, stopPropagation, preventDefault
-
+//----------------------------------------------------------------------------------
 
 // ** Add event listener (xbrowser-legacy)
 var _attachEventListener = function(target, eventType, functionRef, capture)
@@ -22,7 +23,7 @@ var _attachEventListener = function(target, eventType, functionRef, capture)
             }
             catch(err)
             {
-                //_log('DEBUG: Error: Object does not support this property or method (can happen in IE8)');
+                //console.log('DEBUG: Error: Object does not support this property or method (can happen in IE8)');
             }
         };
         target.attachEvent('on' + eventType, target[functionString]);
@@ -66,6 +67,7 @@ var _detachEventListener = function(target, eventType, functionRef, capture)
         target['on' + eventType] = null;
     }
 };
+// ** END: Remove event listener (xbrowser-legacy)
 
 // ** Stop event from bubbling (xbrowser-legacy)
 var _stopEvent = function(e)
@@ -92,3 +94,7 @@ var _stopDefault = function(e)
         e.returnValue = false;
     }
 };
+
+//----------------------------------------------------------------------------------
+// END
+//----------------------------------------------------------------------------------
