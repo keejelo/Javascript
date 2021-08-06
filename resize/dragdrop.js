@@ -59,3 +59,4 @@ var _drag =
     }
 };
 // ** END: Drag'n'drop object module
+
