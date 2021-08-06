@@ -4,10 +4,9 @@ var _resize =
     init : function(id)
     {
         _resize.el = document.getElementById(id);
-        _resize.el.className = _resize.el.className + ' resizable';
+        _resize.el.style.position = 'relative';
         var handle = document.createElement('div');
         _resize.el.appendChild(handle);
-        //handle.className = 'resizeHandle';        
         handle.style.width = '10px';
         handle.style.height = '10px';
         handle.style.backgroundColor = '#0000ff';
