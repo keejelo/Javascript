@@ -14,8 +14,10 @@
     border-radius:5px;
 }
 </style>
+<script src="event_handling.js"></script>
+<script src="dragdrop.js"></script>
 <script src="resize.js"></script>
-<script type="text/javascript">
+<script>
 // ** Window load
 window.addEventListener('load', function()
 {
@@ -24,11 +26,12 @@ window.addEventListener('load', function()
     {
         div.removeEventListener('click', init, false);
         _resize.init('myDiv');
+        _drag.init('myDiv');
     }, false);
 });
 </script>
 </head>
 <body>
-    <div id="myDiv">Click to make resizable</div>
+    <div id="myDiv">Click to make resizable and draggable</div>
 </body>
 </html>
