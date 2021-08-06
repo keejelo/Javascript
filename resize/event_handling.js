@@ -1,6 +1,7 @@
+//----------------------------------------------------------------------------------
 // Crossbrowser and legacy supported event handling for:
 // addEventListener, removeEventListener, stopPropagation, preventDefault
-
+//----------------------------------------------------------------------------------
 
 // ** Add event listener (xbrowser-legacy)
 var _attachEventListener = function(target, eventType, functionRef, capture)
@@ -66,6 +67,7 @@ var _detachEventListener = function(target, eventType, functionRef, capture)
         target['on' + eventType] = null;
     }
 };
+// ** END: Remove event listener (xbrowser-legacy)
 
 // ** Stop event from bubbling (xbrowser-legacy)
 var _stopEvent = function(e)
@@ -92,3 +94,5 @@ var _stopDefault = function(e)
         e.returnValue = false;
     }
 };
+
+// ** END
