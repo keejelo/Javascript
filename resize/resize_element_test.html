@@ -25,8 +25,10 @@ window.addEventListener('load', function()
     div.addEventListener('click', function init()
     {
         div.removeEventListener('click', init, false);
-        _resize.init('myDiv');
+
         _drag.init('myDiv');
+        _resize.init('myDiv');
+
     }, false);
 });
 </script>
