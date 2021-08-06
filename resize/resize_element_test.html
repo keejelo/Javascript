@@ -7,11 +7,11 @@
 {
     margin:0;
     padding:10px;
-    height:200px;
     width:300px;
+    height:200px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:16px;
     font-weight:bold;
+    font-size:16px;
     color:#000;
     background:#ddeaff;
     overflow:hidden;
@@ -24,10 +24,10 @@
 // ** Window load
 _attachEventListener(window, 'load', function()
 {
-    var div = document.getElementById('myDiv');
-    _attachEventListener(div, 'click', function init()
+    var el = document.getElementById('myDiv');
+    _attachEventListener(el, 'click', function init()
     {
-        _detachEventListener(div, 'click', init, false);
+        _detachEventListener(el, 'click', init, false);
         _drag.init('myDiv');
         _resize.init('myDiv');
     }, false);
