@@ -11,7 +11,7 @@ var _resize =
     init : function(id)
     {
         _resize.el = document.getElementById(id);
-        _resize.el.style.position = 'relative';
+        _resize.el.style.position = 'absolute';
         var handle = document.createElement('div');
         _resize.el.appendChild(handle);
         handle.style.width = '10px';
