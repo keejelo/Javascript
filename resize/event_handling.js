@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------
 // Crossbrowser and legacy supported event handling for:
-// addEventListener, removeEventListener, stopPropagation, preventDefault
+// addEventListener, removeEventListener, stopPropagation, preventDefault, target
 //----------------------------------------------------------------------------------
 
 // ** Add event listener (xbrowser-legacy)
@@ -89,11 +89,30 @@ var _stopDefault = function(e)
     {
         e.returnValue = false;
     }
-    
+
     if(typeof e.preventDefault !== 'undefined')
     {
         e.preventDefault();
     }
+};
+
+// ** Get event target (xbrowser legacy)
+var _eTarget = function(e)
+{
+    var targ;
+    if(e.target)
+    {
+        targ = e.target;
+    }
+    else if(e.srcElement)
+    {
+        targ = e.srcElement;
+    }
+    if(targ.nodeType === 3)
+    {
+        targ = targ.parentNode;
+    }
+    return targ;
 };
 
 //----------------------------------------------------------------------------------
