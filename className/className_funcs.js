@@ -34,7 +34,6 @@ var _removeClass = function(el, classValue)
     }
 };
 
-
 // ** Get computed style (xbrowser-legacy)
 // @prop = need to be in quotes and 'camelCase'
 var _getStyle = function(el, prop)
