@@ -89,7 +89,6 @@ var _stopDefault = function(e)
     {
         e.returnValue = false;
     }
-
     if(typeof e.preventDefault !== 'undefined')
     {
         e.preventDefault();
