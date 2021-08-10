@@ -12,20 +12,13 @@ var _resize =
         _resize.el.style.position = 'absolute';
         var handle = document.createElement('div');
         _resize.el.appendChild(handle);
-        handle.innerHTML = '::';
         handle.style.position = 'absolute';
         handle.style.right = '0';
         handle.style.bottom = '0';
         handle.style.padding = '0';
         handle.style.width = '10px';
         handle.style.height = '10px';
-        handle.style.fontFamily = 'Arial,Helvetica,sans-serif';
-        handle.style.fontSize = '10px';
-        handle.style.fontWeight = 'bold';
-        handle.style.lineHeight = '10px';
-        handle.style.textAlign = 'center';
-        handle.style.backgroundColor = '#000';
-        handle.style.color = '#fff';
+        handle.style.backgroundColor = '#0000ff';
         handle.style.cursor = 'nw-resize';
         _attachEventListener(handle, 'mousedown', _resize.start, false);
     },
