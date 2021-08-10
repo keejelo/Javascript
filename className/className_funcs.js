@@ -1,4 +1,7 @@
-
+//----------------------------------------------------------------------------------
+// ** className functions - keejelo 2021
+// https://github.com/keejelo/Javascript
+//----------------------------------------------------------------------------------
 
 // ** Check if element contains specific class
 var _hasClass = function(el, classValue)
