@@ -36,13 +36,13 @@ window.addEventListener('load', function()
 
     fadeInBtn.addEventListener('click', function()
     {
-        fade(myDiv, false, 0, msgIn);
+        fade(myDiv, false, msgIn);
         bAlt = false;
     });
 
     fadeOutBtn.addEventListener('click', function()
     {
-        fade(myDiv, true, 0, msgOut);
+        fade(myDiv, true, msgOut);
         bAlt = true;
     });
 
@@ -50,12 +50,12 @@ window.addEventListener('load', function()
     {
         if(bAlt)
         {
-            fade(myDiv, false, 0, msgIn);
+            fade(myDiv, false, msgIn);
             bAlt = false;
         }
         else
         {
-            fade(myDiv, true, 0, msgOut);
+            fade(myDiv, true, msgOut);
             bAlt = true;
         }
     });
