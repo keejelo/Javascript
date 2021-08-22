@@ -4,10 +4,10 @@
 // Parameters:
 // @el  : element
 // @dir : direction (true = fade out | false = fade in)
-// @spd : animation speed (default = 40)
+// @spd : animation speed (default = 30)
 // @fn  : function to run after fading has finished (optional)
 //-----------------------------------------------------------------------
-var fade = function(el, dir, spd, fn)
+var fade = function(el, dir, fn, spd)
 {
     var n;
     (dir) ? n = 10 : n = 0;
@@ -20,7 +20,7 @@ var fade = function(el, dir, spd, fn)
             clearInterval(t);
             if(typeof fn === 'function') { fn(); }
         }
-    }, spd || 40);
+    }, spd || 30);
 };
 //-----------------------------------------------------------------------
 // ** END: Fade in/out
