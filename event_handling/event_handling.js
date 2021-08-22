@@ -8,7 +8,7 @@ var _attachEventListener = function(target, eventType, functionRef, capture)
 {
     if(typeof target.addEventListener !== 'undefined')
     {
-        target.addEventListener(eventType, functionRef, capture);
+        target.addEventListener(eventType, functionRef, capture || false);
     }
     else if(typeof target.attachEvent !== 'undefined')
     {
@@ -53,7 +53,7 @@ var _detachEventListener = function(target, eventType, functionRef, capture)
 {
     if(typeof target.removeEventListener !== 'undefined')
     {
-        target.removeEventListener(eventType, functionRef, capture);
+        target.removeEventListener(eventType, functionRef, capture || false);
     }
     else if(typeof target.detachEvent !== 'undefined')
     {
