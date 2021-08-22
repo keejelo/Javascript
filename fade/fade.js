@@ -4,8 +4,8 @@
 // Parameters:
 // @el  : element
 // @dir : direction (true = fade out | false = fade in)
-// @spd : animation speed (default = 40)
 // @fn  : function to run after fading has finished (optional)
+// @spd : animation speed (default = 40)
 //-----------------------------------------------------------------------
 var fade = function(el, dir, fn, spd)
 {
