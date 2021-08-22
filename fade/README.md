@@ -14,7 +14,6 @@ https://keejelo.github.io/Javascript/fade/fade_example.html
 // @dir : direction (true = fade out | false = fade in)
 // @fn  : function to run after fading has finished (optional)
 // @spd : animation speed (default = 40)
-
 //-----------------------------------------------------------------------
 var fade = function(el, dir, fn, spd)
 {
