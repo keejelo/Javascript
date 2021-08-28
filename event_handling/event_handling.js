@@ -98,20 +98,9 @@ var _stopDefault = function(e)
 // ** Get event target (xbrowser-legacy)
 var _eTarget = function(e)
 {
-    var t;
-    if(e.target)
-    {
-        t = e.target;
-    }
-    else if(e.srcElement)
-    {
-        t = e.srcElement;
-    }
-    if(t.nodeType === 3)
-    {
-        t = t.parentNode;
-    }
-    return t;
+    var t = e.target || e.srcElement;
+    if(t.nodeType === 3) { t = t.parentNode; }
+    return t;    
 };
 
 //----------------------------------------------------------------------------------
